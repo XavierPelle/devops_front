@@ -1,0 +1,10 @@
+services:
+  angular:
+    container_name: angular
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 4200:4200
+    command: ["sh", "./start.sh"]
